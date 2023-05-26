@@ -6,8 +6,9 @@ main{
     width: 100px;
     height: 100px;
     margin: 5px;
-    border: 1px solid rgb(212, 0, 255);
+    border: 1px solid blueviolet;
     border-radius: 6px;
     font-size: 30px;
     cursor: pointer;
+    color: blueviolet;
 }

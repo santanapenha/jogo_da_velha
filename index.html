@@ -6,14 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <main>
         <section>
             <h1>Jogo da Velha</h1>
         </section>
-        <section class="tabuleiro">
+
+        <section id="containerPersonagens" class="containerPersonagens">
+            <h2>Selecione o <span id="ordemPersonagem">1º</span> personagem</h2>
+            <div>
+                <input type="button" value=" " id="pot1" onclick="clickPot('harrypotter')">
+                <input type="button" value=" " id="pot2" onclick="clickPot('hermionegranger')">
+                <input type="button" value=" " id="pot3" onclick="clickPot('ronweasley')">
+            </div>
+            <div>
+                <input type="button" value=" " id="pot4" onclick="clickPot('hagrid')">
+                <input type="button" value=" " id="pot5" onclick="clickPot('dumbledore')">
+            </div>
+        </section>
+
+        <section class="tabuleiro" id="containerTabuleiro">
             <div>
                 <input type="button" value=" " id="btn1" onclick="clickBtn1()">
                 <input type="button" value=" " id="btn2" onclick="clickBtn2()">
@@ -29,16 +42,19 @@
                 <input type="button" value=" " id="btn8" onclick="clickBtn8()">
                 <input type="button" value=" " id="btn9" onclick="clickBtn9()">
             </div>
-        </section>
-        <section>
-            <h2>
-                <span id="lblJogador">Jogador X</span>
-                <span id="lblJogadas">(1ª Jogada)</span>
-            </h2>
 
-            <input type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()">
-
+            <section>
+                <h2>
+                    <span id="lblJogador">Jogador 1</span>
+                    <span id="lblJogadas">(1ª Jogada)</span>
+                </h2>
+    
+                <input type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()">
+    
+            </section>
         </section>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

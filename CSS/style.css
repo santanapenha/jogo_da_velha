@@ -3,32 +3,52 @@ main{
 }
 
 .tabuleiro div input {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 5px;
-    border: 1px solid blueviolet;
+    border: 1px solid #EEBA30;
     border-radius: 6px;
     font-size: 30px;
     cursor: pointer;
-    color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.containerPersonagens div input {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid #EEBA30;
+    border-radius: 6px;
+    font-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
     text-align: right;
-    background-color: blueviolet;
-    margin: 200px 0 0 0;
-    color: rgb(199, 151, 245);
+    background-color: #740001;
+    margin: 20px 0 0 0;
+    color: #EEBA30;
     overflow: auto;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
-    color: rgb(199, 151, 245) ;
+    color: #D3A625 ;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: #D3A625 ;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 input {
-    background-color: rgb(199, 151, 245);
+    background-color: #AE0001 ;
 }
